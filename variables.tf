@@ -346,21 +346,21 @@ variable "putin_khuylo" {
 variable "rules" {
   description = "Map of known security group rules (define as 'name' = ['from port', 'to port', 'protocol', 'description'])"
   type        = map(list(any))
-  default = {}
+  default     = {}
 }
 
 variable "auto_groups" {
   description = "Map of groups of security group rules to use to generate modules (see update_groups.sh)"
   type        = map(map(list(string)))
-  default = {}
+  default     = {}
 }
 
 variable "region" {
-  type = string
+  type    = string
   default = "ap-south-1"
 }
 
 variable "environment" {
-  type = string
+  type    = string
   default = "Dev"
 }
