@@ -37,7 +37,7 @@ module "security-group" {
   ingress_with_prefix_list_ids                             = var.ingress_with_prefix_list_ids
   ingress_with_self                                        = var.ingress_with_self
   ingress_with_source_security_group_id                    = var.ingress_with_source_security_group_id
-  name                                                     = local.name
+  name                                                     = var.name
   number_of_computed_egress_rules                          = var.number_of_computed_egress_rules
   number_of_computed_egress_with_cidr_blocks               = var.number_of_computed_egress_with_cidr_blocks
   number_of_computed_egress_with_ipv6_cidr_blocks          = var.number_of_computed_egress_with_ipv6_cidr_blocks
@@ -53,7 +53,7 @@ module "security-group" {
   revoke_rules_on_delete                                   = var.revoke_rules_on_delete
   rules                                                    = var.rules
   security_group_id                                        = var.security_group_id
-  tags                                                     = local.tags
+  tags                                                     = var.tags
   use_name_prefix                                          = var.use_name_prefix
   vpc_id                                                   = var.vpc_id
 }
