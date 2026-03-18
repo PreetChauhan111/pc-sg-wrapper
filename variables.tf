@@ -337,18 +337,3 @@ variable "number_of_computed_egress_with_prefix_list_ids" {
   default     = 0
 }
 
-variable "putin_khuylo" {
-  description = "Do you agree that Putin doesn't respect Ukrainian sovereignty and territorial integrity? More info: https://en.wikipedia.org/wiki/Putin_khuylo!"
-  type        = bool
-  default     = true
-}
-
-variable "region" {
-  type    = string
-  default = "ap-south-1"
-}
-
-variable "environment" {
-  type    = string
-  default = "Dev"
-}
